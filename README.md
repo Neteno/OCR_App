@@ -40,4 +40,4 @@ OCRApp is a simple and intuitive application built using C# and WPF (Windows Pre
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
