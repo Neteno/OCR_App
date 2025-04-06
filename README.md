@@ -33,8 +33,6 @@ OCRApp to prosta i intuicyjna aplikacja stworzona w języku C# z wykorzystaniem 
 
 ## 🚀 Instalacja
 
-## 🚀 Instalacja
-
 1. Pobierz najnowszą wersję aplikacji z sekcji [Releases](https://github.com/Neteno/OCR_App/releases).
 2. Uruchom instalator (`.msi`) lub plik wykonywalny (`.exe`), w zależności od wersji.
 3. Postępuj zgodnie z instrukcjami instalatora.
