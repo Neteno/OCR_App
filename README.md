@@ -1,43 +1,45 @@
 # OCRApp
 
-OCRApp is a simple and intuitive application built using C# and WPF (Windows Presentation Foundation) for performing Optical Character Recognition (OCR) on images. It leverages the Tesseract OCR engine to extract text from images and allows users to review, modify, and save the extracted text in various formats (TXT or CSV). The application is designed to offer a user-friendly interface with additional features such as text editing, result selection, and file export options.
+OCRApp to prosta i intuicyjna aplikacja stworzona w języku C# z wykorzystaniem WPF (Windows Presentation Foundation), służąca do rozpoznawania tekstu (OCR) na obrazach. Wykorzystuje silnik Tesseract OCR do wyodrębniania tekstu z obrazów i umożliwia użytkownikom przeglądanie, edytowanie oraz zapisywanie wyników w różnych formatach (TXT lub CSV). Aplikacja oferuje przyjazny interfejs użytkownika z dodatkowymi funkcjami, takimi jak edycja tekstu, wybór wyników oraz opcje eksportu.
 
-## Features
+## 🎯 Funkcje
 
-- **Image Selection**: Users can select an image file (PNG, JPG, JPEG) from their file system.
-- **OCR Processing**: The application uses Tesseract OCR to extract text from the selected image.
-- **Text Review & Editing**: OCR results are displayed in a list with checkboxes. Users can select which OCR results to save and even edit the text before saving.
-- **File Export**: The user can save the selected OCR results into a text file (`.txt`) or CSV file (`.csv`). Users can choose the delimiter (newline, space, semicolon, or comma) used to separate the text.
-- **Multilingual Support**: The Tesseract engine supports both Polish and English languages.
-- **Read-only Text Editing**: The editable text box only activates when a checkbox is checked, allowing for modifications before saving the result.
+- **Wybór obrazu** – użytkownik może wybrać plik graficzny (PNG, JPG, JPEG) z dysku.
+- **Przetwarzanie OCR** – aplikacja używa Tesseract OCR do wyodrębnienia tekstu z wybranego obrazu.
+- **Przegląd i edycja tekstu** – wyniki OCR są wyświetlane na liście z checkboxami. Użytkownik może zaznaczyć i edytować tekst przed zapisaniem.
+- **Eksport plików** – możliwość zapisania wybranych wyników do pliku `.txt` lub `.csv` z wyborem separatora (nowa linia, spacja, średnik, przecinek).
+- **Wsparcie dla wielu języków** – obsługa języka polskiego i angielskiego przez silnik Tesseract.
+- **Edycja tylko zaznaczonych wyników** – edytowanie tekstu możliwe tylko po zaznaczeniu checkboxa.
 
-## How to Use
+## 🛠️ Jak używać
 
-1. **Select an Image**: Click on the "📂 Wybierz obraz" button to select an image for OCR processing.
-2. **Start OCR**: Click on the "🔍 Rozpocznij analizę" button to start extracting text from the image.
-3. **Review and Edit Results**: OCR results will be displayed in a list of checkboxes. You can select which results to save by checking the respective boxes. If a result is selected, you can edit the text before saving.
-4. **Save Changes**: After editing any results, click "💾 Zapisz zmiany" to save the changes to the corresponding text entry.
-5. **Save Results**: Once you've selected the desired results, click on the "💾 Zapisz do pliku" button to save the text to a file. You can choose the file type (TXT or CSV) and the delimiter (Newline, Space, Semicolon, or Comma).
+1. **Wybierz obraz**: kliknij „📂 Wybierz obraz” i załaduj plik graficzny.
+2. **Rozpocznij analizę**: kliknij „🔍 Rozpocznij analizę”, aby uruchomić OCR.
+3. **Przeglądaj i edytuj wyniki**: zaznacz checkboxy przy interesujących Cię wynikach i edytuj tekst.
+4. **Zapisz zmiany**: kliknij „💾 Zapisz zmiany”, aby zatwierdzić edycję.
+5. **Zapisz do pliku**: kliknij „💾 Zapisz do pliku” i wybierz format oraz separator danych.
 
-## Technologies Used
+## 🧰 Technologie
 
-- **C#**: Main programming language used for building the application.
-- **WPF (Windows Presentation Foundation)**: Framework used for designing the user interface.
-- **Tesseract**: The OCR engine used to extract text from images.
-- **.NET**: The application runs on the .NET platform, utilizing the powerful capabilities of the C# language.
+- **C#** – główny język programowania.
+- **WPF** – framework do tworzenia graficznego interfejsu.
+- **Tesseract OCR** – silnik do rozpoznawania tekstu.
+- **.NET Framework** – platforma uruchomieniowa aplikacji.
 
-## Prerequisites
+## 📦 Wymagania
 
-- **Tesseract OCR Engine**: The app requires the Tesseract OCR engine to be installed, along with the language data files (`pol.traineddata` and `eng.traineddata`), which are included in the `tessdata` folder.
-- **.NET Framework**: This app is built on the .NET Framework, so make sure you have the required version of the .NET runtime installed on your machine.
+- **Tesseract OCR** – należy mieć zainstalowany silnik OCR oraz pliki językowe `pol.traineddata` i `eng.traineddata` w folderze `tessdata`.
+- **.NET Framework** – aplikacja wymaga odpowiedniej wersji .NET Framework.
 
-## Installation
+## 🚀 Instalacja
 
-1. Clone or download the repository.
-2. Open the solution in Visual Studio.
-3. Make sure to restore any NuGet packages if needed.
-4. Build and run the project in Visual Studio.
+## 🚀 Instalacja
 
-## License
+1. Pobierz najnowszą wersję aplikacji z sekcji [Releases](https://github.com/Neteno/OCR_App/releases).
+2. Uruchom instalator (`.msi`) lub plik wykonywalny (`.exe`), w zależności od wersji.
+3. Postępuj zgodnie z instrukcjami instalatora.
+4. Po zakończeniu instalacji uruchom aplikację z menu Start lub bezpośrednio z folderu docelowego.
 
-This project is licensed under the MIT License
+📦 **Uwaga:** Upewnij się, że folder `tessdata` (zawierający pliki `pol.traineddata` i `eng.traineddata`) znajduje się w tym samym katalogu co plik `.exe`, lub że jego ścieżka jest poprawnie skonfigurowana w aplikacji.
+
+
