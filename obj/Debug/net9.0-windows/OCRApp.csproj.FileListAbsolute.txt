@@ -55,3 +55,4 @@ C:\Users\Szymon\Desktop\OCRApp\obj\Debug\net9.0-windows\refint\OCRApp.dll
 C:\Users\Szymon\Desktop\OCRApp\obj\Debug\net9.0-windows\OCRApp.pdb
 C:\Users\Szymon\Desktop\OCRApp\obj\Debug\net9.0-windows\OCRApp.genruntimeconfig.cache
 C:\Users\Szymon\Desktop\OCRApp\obj\Debug\net9.0-windows\ref\OCRApp.dll
+C:\Users\Szymon\Desktop\OCRApp\obj\Debug\net9.0-windows\OCRApp.sourcelink.json

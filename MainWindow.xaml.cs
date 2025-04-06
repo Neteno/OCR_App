@@ -22,7 +22,6 @@ namespace OCRApp
         {
             InitializeComponent();
         }
-
         private void SelectImage_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -135,9 +134,10 @@ namespace OCRApp
 
         private void SaveResults_Click(object sender, RoutedEventArgs e)
         {
-            List<string> selectedLines = checkboxValues.Where(kvp => kvp.Value.isChecked)
-                                                        .Select(kvp => kvp.Value.text)
-                                                        .ToList();
+            var selectedLines = checkboxValues
+                .Where(kvp => kvp.Value.isChecked)
+                .Select(kvp => kvp.Value.text)
+                .ToList();
 
             if (selectedLines.Count == 0)
             {
@@ -153,9 +153,29 @@ namespace OCRApp
 
             if (saveFileDialog.ShowDialog() == true)
             {
-                string content = string.Join(selectedSeparator, selectedLines);
-                File.WriteAllText(saveFileDialog.FileName, content);
-                MessageBox.Show("Wyniki zapisane!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+                try
+                {
+                    using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        if (selectedFileType == "csv")
+                        {
+                            // Zapis linii jako pojedyncze komórki CSV – jedna linia = jedna kolumna
+                            writer.WriteLine(string.Join(";", selectedLines.Select(val => $"\"{val.Replace("\"", "\"\"")}\"")));
+                        }
+                        else
+                        {
+                            // Tekstowy zapis z wybranym separatorem
+                            string content = string.Join(selectedSeparator, selectedLines);
+                            writer.Write(content);
+                        }
+                    }
+
+                    MessageBox.Show("Wyniki zapisane!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Błąd przy zapisie: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 

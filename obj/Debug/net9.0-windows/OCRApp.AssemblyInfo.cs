@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OCRApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd43961d3c3a4367261b37a60f891e39717e4b98")]
 [assembly: System.Reflection.AssemblyProductAttribute("OCRApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OCRApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
