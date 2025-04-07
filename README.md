@@ -40,4 +40,5 @@ OCRApp to prosta i intuicyjna aplikacja stworzona w języku C# z wykorzystaniem 
 
 📦 **Uwaga:** Upewnij się, że folder `tessdata` (zawierający pliki `pol.traineddata` i `eng.traineddata`) znajduje się w tym samym katalogu co plik `.exe`, lub że jego ścieżka jest poprawnie skonfigurowana w aplikacji.
 
-
+## Autor  
+📌 **Szymon A. (aka Neteno)**  
